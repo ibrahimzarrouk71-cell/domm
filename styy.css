@@ -1,0 +1,38 @@
+#rand {
+    /* Font styling */
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+
+    /* Gradient background */
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    background-size: 400% 100%;
+    /* Makes the background wider to allow for movement */
+
+    /* Clip background to text and make text transparent */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    /* Animation */
+    animation: rainbow-animation 6s linear infinite;
+}
+
+@keyframes rainbow-animation {
+    0% {
+        background-position: 0 0;
+        /* Start position */
+    }
+
+    100% {
+        background-position: 100% 0;
+        /* End position, moves the gradient across */
+    }
+}
+#boxColor {
+    border: 10px solid rgba(0, 0, 0, 0.39);
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
